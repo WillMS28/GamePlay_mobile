@@ -13,12 +13,6 @@ import { ButtonIcon } from '../../components/ButtonIcon'
 export function SignIn() {
   return (
     <View style={styles.container}>
-      <StatusBar 
-        barStyle='light-content'
-        backgroundColor='transparent'
-        translucent
-      />
-
       <Image 
         source={IlustrationImg} 
         style={styles.image}
@@ -27,9 +21,9 @@ export function SignIn() {
 
       <View style={styles.content}>
         <Text style={styles.title}>
-          Organize {`\n`}
-          suas jogatinas {`\n`}
-          facilmente {`\n`}
+          Conecte-se {`\n`}
+          e organize suas {`\n`}
+          jogatinas {`\n`}
         </Text>
 
         <Text style={styles.subtitle}>
@@ -37,7 +31,7 @@ export function SignIn() {
           favoritos com seus amigos
         </Text>
 
-        <ButtonIcon title='Entre com o Discord' activeOpacity={0.8}/>
+        <ButtonIcon title='Entre com o Discord' activeOpacity={0.7}/>
       </View>
     </View>
   )
