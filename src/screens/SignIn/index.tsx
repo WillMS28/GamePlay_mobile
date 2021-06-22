@@ -1,9 +1,5 @@
 import React from 'react'
-import { 
-  View, 
-  Text,
-  Image,
-} from 'react-native'
+import { View, Text, Image } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 import IlustrationImg from '../../assets/illustration.png'
@@ -42,7 +38,6 @@ export function SignIn() {
 
         <ButtonIcon 
           title='Entre com o Discord' 
-          activeOpacity={0.7}
           onPress={handleSignIn}
         />
       </View>
