@@ -6,7 +6,7 @@ import { styles } from './styles'
 
 
 export function GuildIcon() {
-  const uri = 'https://github.com/WillMS28.png'
+  const uri = 'https://i.redd.it/s9biyhs4lix61.jpg'
 
   return (
 

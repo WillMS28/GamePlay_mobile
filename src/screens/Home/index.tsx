@@ -26,6 +26,10 @@ export function Home() {
     navigation.navigate('AppointmentsDetails')
   }
 
+  function handleAppointmentsCreate () {
+    navigation.navigate('AppointmentsCreate')
+  }
+
   const appointments = [
     {
       id: '1',
@@ -59,7 +63,9 @@ export function Home() {
         <View style={styles.header}>
           <Profile />
 
-          <ButtonAdd />
+          <ButtonAdd 
+            onPress={handleAppointmentsCreate}
+          />
         </View>
       
         
