@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { View, FlatList } from "react-native";
 
 import { styles } from './styles'
+import { Background } from '../../components/Background'
+
 
 import { Profile } from "../../components/Profile";
 import { ButtonAdd } from "../../components/ButtonAdd";
@@ -45,38 +47,40 @@ export function Home() {
   ]
 
   return (
-    <View>
-      <View style={styles.header}>
-        <Profile />
+    <Background>
+      <View>
+        <View style={styles.header}>
+          <Profile />
 
-        <ButtonAdd />
-      </View>
-    
+          <ButtonAdd />
+        </View>
       
-      <CategorySelect 
-        categorySelected={category}
-        setCategory={handleCategorySelect}
-      />
-    
-      <View style={styles.content}>
-        <ListHeader 
-          title='Partidas agendadas' 
-          subtitle='Total 6'
+        
+        <CategorySelect 
+          categorySelected={category}
+          setCategory={handleCategorySelect}
         />
+      
+        <View style={styles.content}>
+          <ListHeader 
+            title='Partidas agendadas' 
+            subtitle='Total 6'
+          />
 
-        <FlatList 
-          data={appointments}
-          style={styles.matches}
-          keyExtractor={ item => item.id}
-          renderItem={({ item }) => (
-            <Appointment data={item} />
-          )}
-          showsHorizontalScrollIndicator={false}
-          ItemSeparatorComponent={() => <ListDivider />
-          }
-        />
+          <FlatList 
+            data={appointments}
+            style={styles.matches}
+            keyExtractor={ item => item.id}
+            renderItem={({ item }) => (
+              <Appointment data={item} />
+            )}
+            showsHorizontalScrollIndicator={false}
+            ItemSeparatorComponent={() => <ListDivider />
+            }
+          />
 
+        </View>
       </View>
-    </View>
+    </Background>
   )
 }
