@@ -10,6 +10,7 @@ import { Background } from '../../components/Background'
 import { Header } from '../../components/Header'
 import { ListHeader } from '../../components/ListHeader'
 import { Members } from '../../components/Member'
+import { ButtonIcon } from '../../components/ButtonIcon'
 import { ListDivider } from '../../components/ListDivider'
 import BannerImg from '../../assets/banner.png'
 
@@ -80,6 +81,10 @@ export function AppointmentsDetails() {
         style={styles.members}
       />
 
+      <View style={styles.footer}>
+        <ButtonIcon title='Entrar na partida' />  
+      </View>
+      
     </Background>
   )
 }
