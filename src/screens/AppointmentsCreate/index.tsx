@@ -1,5 +1,12 @@
 import React, { useState } from 'react'
-import { View, Text, ScrollView, KeyboardAvoidingView, Platform } from 'react-native'
+import { 
+  View, 
+  Text, 
+  ScrollView, 
+  KeyboardAvoidingView, 
+  Platform,
+  Modal
+} from 'react-native'
 import { RectButton } from 'react-native-gesture-handler'
 import { Feather } from '@expo/vector-icons'
 
