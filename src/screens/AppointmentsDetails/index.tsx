@@ -34,6 +34,18 @@ export function AppointmentsDetails() {
       avatar_url: 'http://github.com/WillMS28.png',
       status: 'online'
     },
+    {
+      id: '4',
+      username: 'William',
+      avatar_url: 'http://github.com/WillMS28.png',
+      status: 'online'
+    },
+    {
+      id: '5',
+      username: 'William',
+      avatar_url: 'http://github.com/WillMS28.png',
+      status: 'online'
+    },
   ]
 
   return (
