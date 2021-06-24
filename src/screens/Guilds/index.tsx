@@ -30,6 +30,30 @@ export function Guilds({ handleGuildSelect }: Props) {
       icon: 'null',
       owner: false
     },
+    {
+      id: '4',
+      name: 'Tem inimigo ali',
+      icon: 'null',
+      owner: false
+    },
+    {
+      id: '5',
+      name: 'Tem inimigo ali',
+      icon: 'null',
+      owner: false
+    },
+    {
+      id: '6',
+      name: 'Tem inimigo ali',
+      icon: 'null',
+      owner: false
+    },
+    {
+      id: '7',
+      name: 'Tem inimigo ali',
+      icon: 'null',
+      owner: false
+    },
   ]
 
   return (
@@ -43,7 +67,9 @@ export function Guilds({ handleGuildSelect }: Props) {
             data={item} 
           />
         )}
-        ItemSeparatorComponent={() => <ListDivider />}
+        contentContainerStyle={{ paddingBottom: 68, paddingTop: 104 }}
+        ItemSeparatorComponent={() => <ListDivider isCentered/>}
+        ListHeaderComponent={() => <ListDivider isCentered/>}
         showsVerticalScrollIndicator={false}
         style={styles.guilds}
       />

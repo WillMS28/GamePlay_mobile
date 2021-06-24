@@ -59,44 +59,40 @@ export function Home() {
 
   return (
     <Background>
-      <View>
-        <View style={styles.header}>
-          <Profile />
 
-          <ButtonAdd 
-            onPress={handleAppointmentsCreate}
-          />
-        </View>
+      <View style={styles.header}>
+        <Profile />
+
+        <ButtonAdd 
+          onPress={handleAppointmentsCreate}
+        />
+      </View>
       
         
-        <CategorySelect 
-          categorySelected={category}
-          setCategory={handleCategorySelect}
-        />
+      <CategorySelect 
+        categorySelected={category}
+        setCategory={handleCategorySelect}
+      />
       
-        <View style={styles.content}>
-          <ListHeader 
-            title='Partidas agendadas' 
-            subtitle='Total 6'
-          />
+      <ListHeader 
+        title='Partidas agendadas' 
+        subtitle='Total 2'
+      />
 
-          <FlatList 
-            data={appointments}
-            style={styles.matches}
-            keyExtractor={ item => item.id}
-            renderItem={({ item }) => (
-              <Appointment 
-                data={item}
-                onPress={handleAppointmentsDetails}
-              />
-            )}
-            showsHorizontalScrollIndicator={false}
-            ItemSeparatorComponent={() => <ListDivider />
-            }
+      <FlatList 
+        data={appointments}
+        style={styles.matches}
+        keyExtractor={ item => item.id}
+        renderItem={({ item }) => (
+          <Appointment 
+            data={item}
+            onPress={handleAppointmentsDetails}
           />
-
-        </View>
-      </View>
+        )}
+        contentContainerStyle= {{ paddingBottom: 69 }}
+        showsHorizontalScrollIndicator={false}
+        ItemSeparatorComponent={() => <ListDivider />}
+      />
     </Background>
   )
 }
