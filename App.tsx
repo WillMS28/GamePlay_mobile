@@ -1,5 +1,5 @@
 import React from 'react'
-import { StatusBar } from 'react-native'
+import { StatusBar, LogBox } from 'react-native'
 
 // Importação do hook para usar fonts do google, e as proprias fontes que foram instaladas
 import { useFonts } from 'expo-font'
@@ -13,8 +13,10 @@ import { Routes } from './src/routes'
 
 import { Background } from './src/components/Background'
 
+LogBox.ignoreLogs(['You are not currently signed in to Expo on your development machine.']); 
+
 export default function App() {
-  // carregando as fonts em uma variavel
+
   const [fontsLoaded] = useFonts({
     Inter_400Regular, 
     Inter_500Medium, 
