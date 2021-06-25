@@ -15,6 +15,7 @@ type Props = {
 
 export function GuildIcon({ guildId, iconId } : Props) {
   const uri = `${CDN_IMAGE}/icons/${guildId}/${iconId}.png`
+
   
   //'https://i.redd.it/s9biyhs4lix61.jpg'
 
