@@ -15,13 +15,16 @@
 
 ### Features
 
-- [x] Login integrando com a API do discord 
-- [x] Filtro de categorias
-- [x] Agendamento de encontros
-- [x] Listagens de agendamentos 
-- [x] Detalhamento dos Agendamentos
-- [x] Armazenagem em LocalStorage dados de login do usuário
-- [x] Logout do usuário removendo os dados do LocalStorage
+- [x] Login integrando com a API do discord.
+- [x] Filtro de categorias.
+- [x] Agendamento de encontros.
+- [x] Redirecionamento dentro da aplicação.
+- [x] Listagens de agendamentos.
+- [x] Detalhamento dos Agendamentos.
+- [x] Redirecionamento para sala do discord.
+- [x] Compatilhamento dos agendamentos.
+- [x] Armazenagem em LocalStorage dados de login do usuário.
+- [x] Logout do usuário removendo os dados do LocalStorage.
 
 ### Pré-requisitos
 
