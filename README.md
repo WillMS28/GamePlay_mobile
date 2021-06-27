@@ -39,21 +39,24 @@ E um dispositivo móvel que seja possível utilizar o [Expo Go](https://expo.io/
 
 ### 🔄 Rodando a aplicação em seu ambiente local
 
+### Clonando o repositório
 ```bash
-# Clonando o repositório
 $ git clone https://github.com/WillMS28/GamePlay_mobile.git
-
-# Acesse a pasta do projeto no terminal/cmd
-$ cd GamePlay_mobile
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação
-$ expo start
-
-# O servidor inciará apresentar no console um Qrcode, que pode ser lido utilizando o [Expo Go](https://expo.io/client)
 ```
+### Acesse a pasta do projeto no terminal/cmd
+```bash
+$ cd GamePlay_mobile
+```
+### Instale as dependências
+```bash
+$ npm install
+```
+### Execute a aplicação
+```bash
+$ expo start
+```
+O servidor inciará apresentar no console um Qrcode, que pode ser lido utilizando o [Expo Go](https://expo.io/client)
+
 
 ### 🛠 Tecnologias
 
