@@ -1,4 +1,3 @@
-<h1 align='center'>GamePlay</h1>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/66925214/123554057-b511cf00-d754-11eb-8643-3a4c0e6e95f5.png">
